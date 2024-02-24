@@ -43,31 +43,35 @@ Plot the performance plot
 Evaluate the model with the testing data.
 
 ## PROGRAM
-### Name:
-### Register Number:
+### Name:Visalan H
+### Register Number:212223240183
 ```python
 
-Include your code here
+212223240183
 
 
 ```
 ## Dataset Information
 
-Include screenshot of the dataset
+![dataset1dl](https://github.com/Visalan-H/basic-nn-model/assets/152077751/9686cb42-6365-49d7-804c-1b6950939177)
+
 
 ## OUTPUT
 
 ### Training Loss Vs Iteration Plot
 
-Include your plot here
+![lossplot](https://github.com/Visalan-H/basic-nn-model/assets/152077751/2274c3a3-ee86-4ed4-88d8-f93baff0265a)
+
 
 ### Test Data Root Mean Squared Error
 
-Find the test data root mean squared error
+![image](https://github.com/Visalan-H/basic-nn-model/assets/152077751/2160e606-8c44-40bc-a2c1-49a23c6549b2)
+
 
 ### New Sample Data Prediction
 
-Include your sample input and output here
+![image](https://github.com/Visalan-H/basic-nn-model/assets/152077751/d03951b7-45f8-41ac-b99e-9f3b3bfbc5da)
+
 
 ## RESULT
 
