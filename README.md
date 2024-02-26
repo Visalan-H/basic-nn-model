@@ -53,6 +53,72 @@ Evaluate the model with the testing data.
 
 
 ```
+from google.colab import auth
+import gspread
+from google.auth import default
+import pandas as pd
+
+auth.authenticate_user()
+creds, _ = default()
+gc = gspread.authorize(creds)
+
+worksheet = gc.open('datasetdl').sheet1
+
+rows = worksheet.get_all_values()
+
+df = pd.DataFrame(rows[1:], columns=rows[0])
+df = df.astype({'INPUT':'float','OUTPUT':'float'})
+df.head()
+
+import tensorflow as tf
+from tensorflow import keras
+from keras.layers import Dense
+from keras.models import Sequential
+
+import sklearn
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+
+
+X = df[['INPUT']].values
+y = df[['OUTPUT']].values
+
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size = 0.30,random_state = 20)
+
+
+Scaler = MinMaxScaler()
+
+Scaler.fit(X_train)
+X_train1 = Scaler.transform(X_train)
+
+
+model=tf.keras.Sequential()
+
+model.add(Dense(16,activation='relu',input_shape=(1,)))
+model.add(Dense(16,activation='relu'))
+model.add(Dense(1))
+
+
+model.compile(optimizer='adam',loss='mae')
+
+
+model.fit(X_train1,y_train,epochs=1000)
+
+loss_df = pd.DataFrame(model.history.history)
+loss_df.plot()
+
+
+X_test1 = Scaler.transform(X_test)
+model.evaluate(X_test1,y_test)
+
+X_n1 = [[25.0]]
+
+
+X_n1_1 = Scaler.transform(X_n1)
+
+
+model.predict(X_n1_1)
+
 ## Dataset Information
 
 ![dataset1dl](https://github.com/Visalan-H/basic-nn-model/assets/152077751/9686cb42-6365-49d7-804c-1b6950939177)
