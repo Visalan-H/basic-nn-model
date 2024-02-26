@@ -6,11 +6,13 @@ To develop a neural network regression model for the given dataset.
 
 ## THEORY
 
-Explain the problem statement
+The following model uses linear regression to predict values of unknown data, I have used one input layer with 16 neurons, it will take one column as input.One hidden layer with 16 neurons. Both layers have relu as their activation function. Then one output layer having one neuron that gives the predicted value.
+Regression models show relationships between variables, but they may not perfectly fit the data. Neural networks, though complex and computationally demanding, offer flexibility in choosing regression types and can be enhanced with hidden layers for better predictions.
 
 ## Neural Network Model
 
-Include the neural network model diagram.
+![image](https://github.com/Visalan-H/basic-nn-model/assets/152077751/98983cfb-55ce-4a48-8754-3f24432fd5f7)
+
 
 ## DESIGN STEPS
 
@@ -75,4 +77,4 @@ Evaluate the model with the testing data.
 
 ## RESULT
 
-Include your result here
+A neural network regression model for the given dataset has been developed successfully.
