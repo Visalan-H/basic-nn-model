@@ -48,8 +48,6 @@ Evaluate the model with the testing data.
 ### Name:Visalan H
 ### Register Number:212223240183
 ```python
-
-212223240183
 from google.colab import auth
 import gspread
 from google.auth import default
