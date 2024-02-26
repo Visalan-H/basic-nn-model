@@ -50,9 +50,6 @@ Evaluate the model with the testing data.
 ```python
 
 212223240183
-
-
-```
 from google.colab import auth
 import gspread
 from google.auth import default
@@ -118,6 +115,8 @@ X_n1_1 = Scaler.transform(X_n1)
 
 
 model.predict(X_n1_1)
+
+```
 
 ## Dataset Information
 
