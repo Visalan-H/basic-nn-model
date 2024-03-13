@@ -10,8 +10,8 @@ The following model uses linear regression to predict values of unknown data, I 
 Regression models show relationships between variables, but they may not perfectly fit the data. Neural networks, though complex and computationally demanding, offer flexibility in choosing regression types and can be enhanced with hidden layers for better predictions.
 
 ## Neural Network Model
+![image](https://github.com/Visalan-H/basic-nn-model/assets/152077751/03f2df3c-e85c-439d-bad8-3a750f6554b0)
 
-![image](https://github.com/Visalan-H/basic-nn-model/assets/152077751/98983cfb-55ce-4a48-8754-3f24432fd5f7)
 
 
 ## DESIGN STEPS
